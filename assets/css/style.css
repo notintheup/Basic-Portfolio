@@ -1,0 +1,32 @@
+body { 
+  max-width:960px;
+  float: center;
+  align-content: center; 
+  padding:1em; 
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+}
+div,section,main,aside,header { 
+  font-family:Arial;
+  font-weight: bold; 
+  background-color: #ffffff;
+  border:2px solid lightgray;
+  padding:.5em;
+  margin-bottom:1em;
+}
+img {
+  float: left
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #666666;
+  color: white;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
