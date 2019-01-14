@@ -1,32 +1,89 @@
-body { 
-  max-width:960px;
-  float: center;
-  align-content: center; 
-  padding:1em; 
-  font-family: 'Georgia', Times, Times New Roman, serif;
+* {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading {
+  width: 960px;
+  height: 40px;
+  margin-left: auto; margin-right: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #777777;
+}
+a {
+  padding: 2px;
+  text-decoration: none;
+  color: #222222;
   text-align: center;
 }
-div,section,main,aside,header { 
-  font-family:Arial;
-  font-weight: bold; 
+a.name {
+  float: left;
+  background-color: #4aaaa5;
+  font-size: 24px;
+}
+ul {
+  float: right;
   background-color: #ffffff;
-  border:2px solid lightgray;
-  padding:.5em;
-  margin-bottom:1em;
+  height: 28px;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+li {
+  display: inline;
+  margin: 0; padding: 0;
+}
+.page {
+  border-top: solid; border-color: #777777;
+  background-image: url("../images/white-waves.png");
+  background-repeat: repeat;
+  height: 1000px;
+  width: 100%;
+}
+.full { 
+  padding-top: 20px;
+  margin-left: auto; margin-right: auto;
+  border-top: solid; border-width: 2px; border-color: #dddddd;
+  font-family: 'Georgia', Times, Times, serif;
+}
+.write {
+  margin-top: 20px;
+  background-color: #ffffff;
+  height: auto;
+  max-width:960px;
+  padding-top: 5px; padding-bottom: 5px;
+}
+.about {
+  margin: 10px;
+  color: #4aaaa5;
+  border: bold; border-color:  #666666;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+  max-width: 960px;
+  background-color: #ffffff;
+  height: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: left;
+  color: #222222;
+  word-wrap: normal;
+  line-height: 1.5;
 }
 img {
-  float: left
+  height: 160px; width: 200px;
+  margin: 0; padding: 4px;
+  float: left;
+  
 }
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  height: 40px;
   width: 100%;
   background-color: #666666;
   color: white;
   text-align: center;
-}
-.flex-container {
-  display: flex;
-  flex-direction: column;
+  border-top: 8px solid #4aaaa5;
 }
