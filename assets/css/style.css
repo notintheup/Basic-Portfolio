@@ -97,7 +97,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  height: 500px;
+  height: 550px;
   max-width:960px;
   color: #777777;
   padding: 15px;
@@ -178,7 +178,9 @@ display: flex;
   transition: .5s ease;
   backface-visibility: hidden;
 } 
-
+#form {
+  padding-top: 10px;
+}
 .footer {
   position: fixed;
   bottom: 0;
