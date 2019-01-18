@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
 }
 .heading {
   width: 100%;
@@ -55,13 +53,39 @@ li {
   color: #ffffff;
 }
 .page {
+  margin: auto;
   padding-top: 20px;
   background-image: url("../images/az_subtle.png");
   background-repeat: repeat;
   height: 1000px;
 }
 .container {
-  padding: 5px;
+  position: middle;
+  width: 50%;
+  max-width: 300px;
+  display: inline-table;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  object-position: top;
+  bottom: 0; 
+  background: rgb(12, 188, 103);
+  background: rgba(8, 178, 169, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: rgb(122, 17, 17);
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
 }
 .full { 
   padding-top: 20px;
@@ -77,31 +101,42 @@ li {
   height: 500px;
   max-width:960px;
   color: #777777;
-  padding-top: 5px; padding-bottom: 5px;
+  padding: 5px;
 }
 .about {
   margin: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 22px;
+  margin-bottom: 5px;
   font-size: 24px;  
   color: #4aaaa5;
   border-bottom: solid; border-color:  #666666; border-width: 2px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 p {
-  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   color: #777777;
   padding-top: 2px;
+  padding-right: 2px;
   word-wrap: normal;
   line-height: 1.5;
-  margin: 10px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  height: 500px;
+  max-width:960px;
+  color: #777777;
+  padding-top: 25px; padding-bottom: 5px;
+}
+span {
+  padding-left: 5px;
+  padding-top: 5px;
 }
 img {
-  height: 180px; width: 200px;
-  margin: 2px; padding: 10px;
+  height: 200px; width: 250px;
+  margin: 2px; padding: 10px; padding-right: 20px;
   border-radius: 15px;
   float: left;
-  
 }
 input[type=text], select, textarea {
   width: 100%; 
@@ -122,14 +157,16 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #4aaaa5;
+  background-color: #ececec;
 }
 .gallery {
   margin: auto;
-  float: left;
   width: 960px;
   padding: 2px;
   background-color: #ffffff;
+}
+.gallery.container {
+display: flex;
 }
 .gall-img {
   opacity: 1;
@@ -138,60 +175,8 @@ input[type=submit]:hover {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-}
-.game {
-  float: left;
-  position: relative;
-  margin: auto;
-  width: 25%;
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 10px;
-}
-.game:hover  {
-  opacity: 0.3;
-  
-}
-.game:hover .gall-img {
-  opacity: 0.3;
-}
+} 
 
-.game:hover .text {
-  opacity: 1;
-}
-/* .game .over {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-} */
-/* .game .gall-label {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-} */
-/* .over {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-} */
 .footer {
   position: fixed;
   bottom: 0;
